@@ -15,9 +15,12 @@ This project demonstrates foundational and advanced MongoDB techniques including
 ```bash
 git clone https://github.com/PLP-MERN-Stack-Development/mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops.git
 cd mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops
-3. Install Dependencies
+
+
+Install Dependencies
 bash
 npm install mongodb
+
 📂 Files Included
 insert_books.js – Script to populate the plp_bookstore database with sample book data.
 
@@ -28,9 +31,12 @@ README.md – Instructions for setup and usage.
 screenshot.png – Screenshot of MongoDB Compass or Atlas showing your collections and sample data.
 
 📦 How to Run the Scripts
+
 1. Run insert_books.js to populate the database
 bash
 node insert_books.js
+
+
 This will:
 
 Connect to your MongoDB instance
@@ -42,11 +48,13 @@ Insert 10+ sample book documents
 Display inserted books in the terminal
 
 2. Run Queries Using MongoDB Shell or Compass
+
 Option A: Using MongoDB Shell (mongosh)
 bash
 mongosh
 use plp_bookstore
 load('queries.js')
+
 Option B: Using MongoDB Compass
 Connect to your local or Atlas cluster
 
