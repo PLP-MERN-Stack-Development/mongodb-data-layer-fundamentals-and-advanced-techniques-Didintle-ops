@@ -1,39 +1,43 @@
- # 📚 Week 1: MongoDB – Data Layer Fundamentals and Advanced Techniques
+📚 Week 1: MongoDB – Data Layer Fundamentals and Advanced Techniques
+🚀 Objective
 
-## 🚀 Objective
-This project demonstrates foundational and advanced MongoDB techniques including data insertion, CRUD operations, aggregation pipelines, and indexing.
+This project demonstrates both foundational and advanced MongoDB techniques, including:
 
----
+Data insertion
 
-## 🛠️ Setup Instructions
+CRUD operations
 
-### 1. Install MongoDB
-- Option A: [Download MongoDB Community Edition](https://www.mongodb.com/try/download/community)
-- Option B: [Create a free MongoDB Atlas cluster](https://www.mongodb.com/cloud/atlas/register)
+Aggregation pipelines
 
-### 2. Clone the Repository
-```bash
+Indexing
+
+🛠️ Setup Instructions
+1. Install MongoDB
+
+Choose one of the following options:
+
+Option A: Download MongoDB Community Edition
+
+Option B: Create a Free MongoDB Atlas Cluster
+
+2. Clone the Repository
 git clone https://github.com/PLP-MERN-Stack-Development/mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops.git
 cd mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops
 
-
-Install Dependencies
-bash
+3. Install Dependencies
 npm install mongodb
 
 📂 Files Included
-insert_books.js – Script to populate the plp_bookstore database with sample book data.
-
-queries.js – MongoDB queries for CRUD, advanced filtering, aggregation, and indexing.
-
-README.md – Instructions for setup and usage.
-
-screenshot.png – Screenshot of MongoDB Compass or Atlas showing your collections and sample data.
-
+File	Description
+insert_books.js	Script to populate the plp_bookstore database with sample book data.
+queries.js	MongoDB queries including CRUD, filtering, aggregation, and indexing.
+README.md	Setup instructions and usage guide (this file).
+screenshot.png	Screenshot of MongoDB Compass or Atlas showing collections and sample data.
 📦 How to Run the Scripts
+1. Populate the Database
 
-1. Run insert_books.js to populate the database
-bash
+Run the data insertion script:
+
 node insert_books.js
 
 
@@ -45,44 +49,50 @@ Drop the existing books collection if it exists
 
 Insert 10+ sample book documents
 
-Display inserted books in the terminal
+Display the inserted documents in the terminal
 
-2. Run Queries Using MongoDB Shell or Compass
-
-Option A: Using MongoDB Shell (mongosh)
-bash
+2. Run Queries
+✅ Option A: Using MongoDB Shell (mongosh)
 mongosh
 use plp_bookstore
 load('queries.js')
 
-Option B: Using MongoDB Compass
-Connect to your local or Atlas cluster
+✅ Option B: Using MongoDB Compass
+
+Connect to your local or Atlas MongoDB cluster
 
 Navigate to the plp_bookstore database
 
 Open the books collection
 
-Run queries manually from queries.js
+Run the queries manually from queries.js
 
 🧪 Expected Outcome
-A functioning MongoDB database with structured book data
 
-Verified CRUD and advanced queries
+By completing this project, you should achieve the following:
 
-Aggregation pipelines for analysis
+A fully populated plp_bookstore MongoDB database
 
-Indexed fields with performance improvements
+Verified CRUD operations and advanced queries
+
+Aggregation pipelines for analyzing data
+
+Indexed fields for optimized performance
 
 ✅ Submission Checklist
-[x] insert_books.js with sample data
 
-[x] queries.js with all required queries
+ insert_books.js with sample data
 
-[x] README.md with setup and usage instructions
+ queries.js with all required queries
 
-[x] Screenshot of MongoDB Compass or Atlas showing your data
+ README.md with setup and usage instructions
 
-[x] All files committed and pushed to GitHub
+ Screenshot (screenshot.png) of your data in MongoDB Compass or Atlas
+
+ All files committed and pushed to GitHub
 
 👤 Author
-Didintle Lloyd Motshabi MongoDB Week 1 Assignment – PLP MERN Stack Development
+
+Didintle Lloyd Motshabi
+MongoDB Week 1 Assignment
+PLP MERN Stack Development Program
