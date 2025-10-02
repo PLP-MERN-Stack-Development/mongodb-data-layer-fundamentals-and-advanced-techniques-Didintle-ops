@@ -1,59 +1,80 @@
-# MongoDB Fundamentals - Week 1
+ # 📚 Week 1: MongoDB – Data Layer Fundamentals and Advanced Techniques
 
-## Setup Instructions
+## 🚀 Objective
+This project demonstrates foundational and advanced MongoDB techniques including data insertion, CRUD operations, aggregation pipelines, and indexing.
 
-Before you begin this assignment, please make sure you have the following installed:
+---
 
-1. **MongoDB Community Edition** - [Installation Guide](https://www.mongodb.com/docs/manual/administration/install-community/)
-2. **MongoDB Shell (mongosh)** - This is included with MongoDB Community Edition
-3. **Node.js** - [Download here](https://nodejs.org/)
+## 🛠️ Setup Instructions
 
-### Node.js Package Setup
+### 1. Install MongoDB
+- Option A: [Download MongoDB Community Edition](https://www.mongodb.com/try/download/community)
+- Option B: [Create a free MongoDB Atlas cluster](https://www.mongodb.com/cloud/atlas/register)
 
-Once you have Node.js installed, run the following commands in your assignment directory:
-
+### 2. Clone the Repository
 ```bash
-# Initialize a package.json file
-npm init -y
-
-# Install the MongoDB Node.js driver
+git clone https://github.com/PLP-MERN-Stack-Development/mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops.git
+cd mongodb-data-layer-fundamentals-and-advanced-techniques-Didintle-ops
+3. Install Dependencies
+bash
 npm install mongodb
-```
+📂 Files Included
+insert_books.js – Script to populate the plp_bookstore database with sample book data.
 
-## Assignment Overview
+queries.js – MongoDB queries for CRUD, advanced filtering, aggregation, and indexing.
 
-This week focuses on MongoDB fundamentals including:
-- Creating and connecting to MongoDB databases
-- CRUD operations (Create, Read, Update, Delete)
-- MongoDB queries and filters
-- Aggregation pipelines
-- Indexing for performance
+README.md – Instructions for setup and usage.
 
-## Submission
+screenshot.png – Screenshot of MongoDB Compass or Atlas showing your collections and sample data.
 
-Complete all the exercises in this assignment and push your code to GitHub using the provided GitHub Classroom link.
+📦 How to Run the Scripts
+1. Run insert_books.js to populate the database
+bash
+node insert_books.js
+This will:
 
-## Getting Started
+Connect to your MongoDB instance
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+Drop the existing books collection if it exists
 
-## Files Included
+Insert 10+ sample book documents
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+Display inserted books in the terminal
 
-## Requirements
+2. Run Queries Using MongoDB Shell or Compass
+Option A: Using MongoDB Shell (mongosh)
+bash
+mongosh
+use plp_bookstore
+load('queries.js')
+Option B: Using MongoDB Compass
+Connect to your local or Atlas cluster
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+Navigate to the plp_bookstore database
 
-## Resources
+Open the books collection
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+Run queries manually from queries.js
+
+🧪 Expected Outcome
+A functioning MongoDB database with structured book data
+
+Verified CRUD and advanced queries
+
+Aggregation pipelines for analysis
+
+Indexed fields with performance improvements
+
+✅ Submission Checklist
+[x] insert_books.js with sample data
+
+[x] queries.js with all required queries
+
+[x] README.md with setup and usage instructions
+
+[x] Screenshot of MongoDB Compass or Atlas showing your data
+
+[x] All files committed and pushed to GitHub
+
+👤 Author
+Didintle Lloyd Motshabi MongoDB Week 1 Assignment – PLP MERN Stack Development
